@@ -46,6 +46,7 @@ Now, you want to make a README file.
 ```bash
 # Create a README
 echo "# Hello COMP423 Go Project" > README.md
+echo "Tutorial: https://rishyendra333.github.io/comp423-course-notes/tutorials/go-setup/" >> README.md
 git add README.md
 git commit -m "initializing README"
 ```
