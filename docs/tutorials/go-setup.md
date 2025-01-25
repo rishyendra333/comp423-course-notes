@@ -138,7 +138,7 @@ The `go run` command compiles and executes your program immediately, similar to 
 # Method 2: Build an executable called 'go-tutorial-comp423'
 go build
 
-# runs the executable
+# This line runs the executable
 ./go-tutorial-comp423
 ```
 
