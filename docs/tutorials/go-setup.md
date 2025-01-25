@@ -4,11 +4,11 @@
 * Reviewer: [Rachit Bajpai](https://github.com/rbajpai-unc)
 
 ## Introduction to Go
-Go (often referred to as Golang) is a programming language developed by Google engineers Robert Griesemer, Rob Pike, and Ken Thompson. It was born out of frustration with existing languages being used at Google in 2007, and was officially announced in 2009. The language was designed to address the challenges of large-scale software development at Google.
+Go (often referred to as Golang) is a programming language developed in 2009 by Google engineers Robert Griesemer, Rob Pike, and Ken Thompson. It was born out of frustration with existing languages being used at Google. The language was designed to address the challenges of large-scale software development at Google.
 
 Key Features of Go:
 
-- It's concurrency allows you to run multiple tasks simultaneously, making it 
+- It's concurrency allows you to run multiple tasks simultaneously 
 - Simple, efficient, and easy to learn
 - Automatic garbage collection manages the memory for you
 
@@ -44,7 +44,7 @@ git init
 
 Now, you want to make a README file.
 ```bash
-# Create a simple README
+# Create a README
 echo "# Hello COMP423 Go Project" > README.md
 git add README.md
 git commit -m "initializing README"
@@ -82,7 +82,7 @@ Add the following configurations to the `devcontainer.json` file.
 ### Step 3: Verify Go Installation
 
 Now, let's verify whether we have Go installed in our dev container. To do this, reopen the repository in the dev container  by doing the following:  
-Open the Command Palette with `Ctrl + Shift + P` if on Windows or `Cmd + Shift + P` on windows  
+Open the Command Palette with `Ctrl + Shift + P` if on Windows or `Cmd + Shift + P` on mac.  
 Then, type "Dev Containers: Reopen in Container"  
 
 !!! note
@@ -124,8 +124,7 @@ func main() {
 
 ### Step 6: Build and Run
 
-!!! tip "Build vs Run"
-    Let's explore both ways to run your Go program.
+Let's explore both ways to run your Go program.
 
 ```bash
 # Method 1: Quick run without creating an executable
@@ -142,7 +141,7 @@ go build
 ./go-tutorial-comp423
 ```
 
-The `go build` command is more similar to `gcc`. Let's break down the comparison:
+The `go build` command is more similar to `gcc` and then running the executable. Let's break down the comparison:
 
 - With GCC:
     1. `gcc hello.c` would create an executable (default name: a.out)
@@ -159,12 +158,12 @@ The `go build` command is more similar to `gcc`. Let's break down the comparison
 !!! note "Executable Name"
     The executable's name comes from your module name (what you specified in `go mod init`). If you used a different name, your executable will have that name instead of "go-tutorial-comp423".
 
-### Step 7: Push to GitHub
+## Push to GitHub
 
 1. Create a new repository on GitHub:
    - Go to github.com and click "New repository"
    - Name it `go-tutorial-comp423`
-   - Leave it public and don't initialize it with the READMe.me file
+   - Leave it public and don't initialize it with the READMe.md file
    - Click "Create repository"
 
 2. Link your local repository to GitHub (replace `<your-username>` with your GitHub username):
